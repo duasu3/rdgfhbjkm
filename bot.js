@@ -1,6 +1,6 @@
 ﻿const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "+";\\ كرافكس
+const prefix = "+"
 
 client.on("message", async message => {
     var command = message.content.split(" ")[0];
@@ -88,7 +88,7 @@ client.on("message", async message => {
 });
 
 client.on("message", message => {
-    var prefix = "+";\\كرافكس
+    var prefix = "+"
         if (message.author.id === client.user.id) return;
         if (message.guild) {
        let embed = new Discord.RichEmbed()
